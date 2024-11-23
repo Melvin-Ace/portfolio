@@ -1,4 +1,3 @@
-// Get the canvas element
 const canvas = document.getElementById("matrixCanvas");
 const ctx = canvas.getContext("2d");
 

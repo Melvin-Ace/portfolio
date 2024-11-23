@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiribi Developer</title>
+
+    <link rel="icon" type="png|image" href="/IMAGES/logo2.png">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.9); /* Slightly dark background */
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .header .logo {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .navbar a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 80%; /* Constrain the width for a centered layout */
+        }
+
+        /* Card Styling */
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(240, 96, 96, 0.5); /* Glowing edge */
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(240, 96, 96, 0.8);
+        }
+
+        .card img {
+            width: 350px; /* Fixed image width */
+            height: 200px; /* Fixed image height */
+            object-fit: cover;
+            border-right: 2px solid rgba(240, 96, 96, 0.6);
+        }
+
+        .card-body {
+            padding: 1rem;
+            color: #fff; /* White text for details */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #f06;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .list-group {
+            margin: 0.5rem 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list-group-item {
+            font-size: 0.9rem;
+            color: #fff;
+            margin: 0.2rem 0;
+        }
+
+        .card-body a {
+            text-decoration: none;
+            color: #f06;
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+
+        .card-body a:hover {
+            color: #ff3366;
+        }
+    </style>
+</head>
+<body>
+<canvas id="matrixCanvas"></canvas>
+<!-- Matrix -->
+<script src="/JAVASCRIPT/matrix.js"></script>
+
+<header class="header">
+    <a href="/portfolio" class="logo">{DevThiribi}</a>
+
+    <nav class="navbar">
+        <a href="/portfolio" style="--i:1;">Home</a>
+        <a href="about.html" style="--i:2;">About</a>
+        <a href="skills.html" style="--i:3;">Experience</a>
+        <a href="project.html" style="--i:4;">Projects</a>
+        <a href="contact.html" style="--i:5;">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="/IMAGES/dashboard.png" alt="Card Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Django Ecommerce Website</h5>
+                <p class="card-text">This is an eccommerce site:<br>
+                    -Administrators can create categories and sub-categories.<br>
+                    -Categories reflect on the Customers Dashboard in real-time.<br>
+                    -Creation of products with their prices & discounts.</p>
+                <a href="www.vegastar.developerthiribi.co.ke" class="card-link">Click to Visit</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="/IMAGES/hbill.png" alt="Card Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Stock Management System</h5>
+                <p class="card-text">This is a stock taking system:<br>
+                    -Administrators can monitor sales and compare different times.<br>
+                    -System can handle different warehouses and their stocks.<br>
+                    -Generates reports on warehouse stack list, sales and profits made.</p>
+                <a href="www.hbill.developerthiribi.co.ke" class="card-link">Click to Visit</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="/IMAGES/revenue.png" alt="Card Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Revenue Collection System</h5>
+                <p class="card-text">This is a revenue collection system:<br>
+                    -Integrated with Point Of Sale machines.<br>
+                    -Shows revenue flows in real-time.<br>
+                    -Has endless application areas.</p>
+                <a href="www.revcollector.developerthiribi.co.ke" class="card-link">Click to Visit</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
