@@ -30,6 +30,7 @@ Cybersecurity Expertise
 Vulnerability Assessment
 Penetration Testing
 Secure Code Practices
+
 🚀 Projects
 This portfolio highlights some of my public projects that showcase my skills as a developer. 
 Visit the Projects section to see examples of my work.
@@ -37,6 +38,7 @@ Visit the Projects section to see examples of my work.
 🤝 Contact
 Feel free to reach out to discuss projects, ideas, or just connect!
 
+Website: https://developerthiribi.co.ke/
 Email: melvinthiribi@gmail.com
 LinkedIn: Melvin Thiribi
 GitHub: Melvin-Ace
